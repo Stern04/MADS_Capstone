@@ -1,0 +1,118 @@
+aiohttp==3.8.6
+aiosignal==1.3.1
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+async-timeout==4.0.3
+attrs==23.1.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+beautifulsoup4==4.12.2
+black==23.10.1
+bleach==6.1.0
+cachetools==5.3.2
+certifi==2022.12.7
+charset-normalizer==2.1.1
+click==8.1.7
+colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
+comm @ file:///C:/b/abs_1419earm7u/croot/comm_1671231131638/work
+contourpy==1.1.1
+cycler==0.12.1
+debugpy @ file:///C:/b/abs_c0y1fjipt2/croot/debugpy_1690906864587/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+defusedxml==0.7.1
+exceptiongroup @ file:///C:/b/abs_25wqfvkf25/croot/exceptiongroup_1668714345637/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+fastjsonschema==2.19.0
+filelock==3.9.0
+fire==0.5.0
+flake8==5.0.4
+flake8-nb==0.5.3
+fonttools==4.43.1
+frozenlist==1.4.0
+fsspec==2023.4.0
+idna==3.4
+importlib-metadata @ file:///C:/b/abs_20ndzb2j6v/croot/importlib-metadata_1678997085534/work
+importlib-resources==6.1.0
+iniconfig==2.0.0
+ipykernel @ file:///C:/b/abs_07rkft_vaz/croot/ipykernel_1691121700587/work
+ipython @ file:///C:/b/abs_e5729i179y/croot/ipython_1694181400005/work
+jedi @ file:///C:/ci/jedi_1644315428289/work
+Jinja2==3.1.2
+joblib==1.3.2
+jsonschema==4.20.0
+jsonschema-specifications==2023.11.1
+jupyter_client @ file:///C:/b/abs_059idvdagk/croot/jupyter_client_1680171872444/work
+jupyter_core @ file:///C:/b/abs_9d0ttho3bs/croot/jupyter_core_1679906581955/work
+jupyterlab_pygments==0.3.0
+kiwisolver==1.4.5
+lightning==2.1.0
+lightning-utilities==0.9.0
+lyft-dataset-sdk @ git+https://github.com/lyft/nuscenes-devkit@49c36da0a85da6bc9e8f2a39d5d967311cd75069
+MarkupSafe==2.1.2
+matplotlib==3.8.0
+matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661915841596/work
+mccabe==0.7.0
+mistune==3.0.2
+mpmath==1.2.1
+multidict==6.0.4
+mypy-extensions==1.0.0
+nbclient==0.9.0
+nbconvert==7.11.0
+nbformat==5.9.2
+nest-asyncio @ file:///C:/b/abs_3a_4jsjlqu/croot/nest-asyncio_1672387322800/work
+networkx==3.0rc1
+numpy==1.24.1
+opencv-python==4.8.1.78
+packaging @ file:///C:/b/abs_28t5mcoltc/croot/packaging_1693575224052/work
+pandas==2.1.1
+pandocfilters==1.5.0
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathspec==0.11.2
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.3.0
+platformdirs @ file:///C:/b/abs_b6z_yqw_ii/croot/platformdirs_1692205479426/work
+plotly==5.18.0
+pluggy==1.3.0
+prompt-toolkit @ file:///C:/b/abs_6coz5_9f2s/croot/prompt-toolkit_1672387908312/work
+psutil @ file:///C:/Windows/Temp/abs_b2c2fd7f-9fd5-4756-95ea-8aed74d0039flsd9qufz/croots/recipe/psutil_1656431277748/work
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+pycodestyle==2.9.1
+pyflakes==2.5.0
+Pygments @ file:///C:/b/abs_fay9dpq4n_/croot/pygments_1684279990574/work
+pyparsing==3.1.1
+pyquaternion==0.9.9
+pytest==7.4.3
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytorch-lightning==2.1.0
+pytz==2023.3.post1
+pywin32==305.1
+PyYAML==6.0.1
+pyzmq @ file:///C:/b/abs_655zk4a3s8/croot/pyzmq_1686601465034/work
+referencing==0.31.0
+requests==2.28.1
+rpds-py==0.13.1
+scikit-learn==1.3.2
+scipy==1.11.3
+seaborn==0.13.0
+shapely==2.0.2
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+soupsieve==2.5
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+sympy==1.11.1
+tenacity==8.2.3
+termcolor==2.3.0
+threadpoolctl==3.2.0
+tinycss2==1.2.1
+tomli==2.0.1
+torch==2.2.0.dev20231018+cu118
+torchaudio==2.2.0.dev20231018+cu118
+torchmetrics==1.2.0
+torchvision==0.17.0.dev20231018+cu118
+tornado @ file:///C:/b/abs_0cbrstidzg/croot/tornado_1696937003724/work
+tqdm==4.66.1
+traitlets @ file:///C:/b/abs_e5m_xjjl94/croot/traitlets_1671143896266/work
+typing_extensions==4.4.0
+tzdata==2023.3
+urllib3==1.26.13
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+webencodings==0.5.1
+yarl==1.9.2
+zipp @ file:///C:/b/abs_b9jfdr908q/croot/zipp_1672387552360/work
