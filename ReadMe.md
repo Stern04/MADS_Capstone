@@ -4,6 +4,8 @@ This repository focuses on data originally shared from the 2019 Kaggle Competiti
 ![Alt text](blog_images/neuscenes.PNG)
 ![Alt text](blog_images/merged_pic.PNG)
 ![Alt text](blog_images/cnn_layer1.PNG)
+![Alt text](blog_images/pie_false_positives_torch.PNG)
+
 ![Alt text](blog_images/false_negative_cars.jpeg)
 ## The Goal:
 
