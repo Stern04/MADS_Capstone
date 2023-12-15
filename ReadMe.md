@@ -2,7 +2,7 @@
 This repository focuses on data originally shared from the 2019 Kaggle Competition hosted by Lyft "3D Object Detection for Autonomous Vehicles" which can be found at https://www.kaggle.com/competitions/3d-object-detection-for-autonomous-vehicles/overview. This project showcases a Pytorch implementation of Image Classification and Object Detection.
 
 ![Alt text](blog_images/neuscenes.PNG)
-<img src="blog_images/merged_pic.PNG" width="500" height="250">
+<img src="blog_images/merged_pic.PNG" width="250" height="250">
 
 ![Alt text](blog_images/false_negative_cars.jpeg)
 ## The Goal:
