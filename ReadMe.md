@@ -1,6 +1,7 @@
 # Using Pytorch CNNs to Detect Pedestrians in Autonomous Vehicle Data
 This repository focuses on data originally shared from the 2019 Kaggle Competition hosted by Lyft "3D Object Detection for Autonomous Vehicles" which can be found at https://www.kaggle.com/competitions/3d-object-detection-for-autonomous-vehicles/overview. This project showcases a Pytorch implementation of Image Classification and Object Detection.
-![Alt text](Report_examples/neuscenes.PNG)
+
+![Alt text](blog_images/neuscenes.PNG)
 ## The Goal:
 
 The goal of this repository is related but different to the goal set by the original Kaggle Competition. This involved heavy use of lidar data in conjuction with imagery data. This project, instead, soley focuses on using the image data for imagery based work.
@@ -14,7 +15,7 @@ While this goes beyond some of the most basic Image Classification exercises one
 - The upper right image (credit to University College London https://github.com/UCL/MPHY0026/blob/master/doc/calibration/camera_calibration.rst) depicts some of the complex matrix transformations that are required to translate between World Space (default) and Image Space
 - The lower right image shows the full image space of a given image in our dataset denoted by the x and y axis. The red shading in the middle is a heatmap of occurences of our positive category (Pedestrian) which highlights the most common locations in the imagery that this category occurs.
 
-<img src="Report_examples/merged_pic.PNG" width="1000" height="500">
+<img src="blog_images/merged_pic.PNG" width="1000" height="500">
 
 ## Project main Features:
 ### lyft_preprocessing.ipynb
