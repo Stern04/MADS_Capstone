@@ -3,6 +3,8 @@ This repository focuses on data originally shared from the 2019 Kaggle Competiti
 
 ![Alt text](blog_images/neuscenes.PNG)
 ![Alt text](blog_images/merged_pic.PNG)
+![Alt text](blog_images/cnn_layer1.PNG)
+![Alt text](blog_images/false_negative_cars.jpeg)
 ## The Goal:
 
 The goal of this repository is related but different to the goal set by the original Kaggle Competition. This involved heavy use of lidar data in conjuction with imagery data. This project, instead, soley focuses on using the image data for imagery based work.
@@ -16,7 +18,6 @@ While this goes beyond some of the most basic Image Classification exercises one
 - The upper right image (credit to University College London https://github.com/UCL/MPHY0026/blob/master/doc/calibration/camera_calibration.rst) depicts some of the complex matrix transformations that are required to translate between World Space (default) and Image Space
 - The lower right image shows the full image space of a given image in our dataset denoted by the x and y axis. The red shading in the middle is a heatmap of occurences of our positive category (Pedestrian) which highlights the most common locations in the imagery that this category occurs.
 
-## Trying image here
 ![Alt text](blog_images/merged_pic.PNG)
 
 ## Project main Features:
