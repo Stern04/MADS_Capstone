@@ -15,7 +15,7 @@ While this goes beyond some of the most basic Image Classification exercises one
 - The upper right image (credit to University College London https://github.com/UCL/MPHY0026/blob/master/doc/calibration/camera_calibration.rst) depicts some of the complex matrix transformations that are required to translate between World Space (default) and Image Space
 - The lower right image shows the full image space of a given image in our dataset denoted by the x and y axis. The red shading in the middle is a heatmap of occurences of our positive category (Pedestrian) which highlights the most common locations in the imagery that this category occurs.
 
-<img src="blog_images/merged_pic.PNG" width="1000" height="500">
+![Alt text](blog_images/merged_pic.PNG)
 
 ## Project main Features:
 ### lyft_preprocessing.ipynb
