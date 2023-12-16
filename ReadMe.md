@@ -96,8 +96,8 @@ The first step that I recommend once you have gotten things in place is to actua
 
 Additionally, I highly recommend reading through the Torch_Traffic_Blog_Post.pdf. I included it in the repository because I think it does the best and most detailed job of describing the purpose of this project and why it has value. Both of the working Notebooks are fairly dense, and as such, I wanted to have somewhere where I could write more about what I did and why. It is a quick read and there is minimal math.
 
-## 3 Conclusion of Torch Traffic version 0.0.1
-As the title suggests, as of Dec 2023, this project is in its infancy. What is exciting is that promising results were achieved for Image Classification 
+## 3. Conclusion of Torch Traffic version 0.0.1 and Future Work
+As the title suggests, as of Dec 2023, this project is in its infancy. What is exciting is that promising results were achieved for Image Classification fairly quickly using a Pytorch Resnet50 model with pretrained weights. Caveats to the performance were discussed in detail in the Torch_Traffic_Blog_Post, but I remain optimistic. Object Detection has not been fully implemented at this time, but much of the work to get there has already been done. This will be the main focus for the next release. In addition to adding Object Detection, I would like to iterate through and experiment with different CNN architectures. I may compare the same Pytorch model with pretrained VS no initial weights, and comparisons of other out of the box and custom model architectures will follow. Lastly, like many of the solutions to the original Kaggle competition showcase, Lidar data is a critical component in the Autonomous Vehicle space. Once I have graduated from working with images in isolation, I will introduce Lidar. 
 
 
 
