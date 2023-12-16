@@ -1,18 +1,18 @@
-# Using Pytorch CNNs to Detect Pedestrians in Autonomous Vehicle Data
-This repository focuses on data originally shared from the 2019 Kaggle Competition hosted by Lyft "3D Object Detection for Autonomous Vehicles" which can be found at https://www.kaggle.com/competitions/3d-object-detection-for-autonomous-vehicles/overview. This project showcases a Pytorch implementation of Image Classification and Object Detection.
+# Using Pytorch CNNs to Detect Pedestrians in Autonomous Vehicle Data aka *Torch Traffic*
+This repository focuses on data originally shared from the 2019 Kaggle Competition hosted by Lyft "3D Object Detection for Autonomous Vehicles" which can be found at https://www.kaggle.com/competitions/3d-object-detection-for-autonomous-vehicles/overview. This project showcases a Pytorch implementation of Image Classification and Object Detection that leverages the specific Lyft SDK https://github.com/lyft/nuscenes-devkit.
 
 ![Alt text](blog_images/neuscenes.PNG)
 
 ## The Goal:
 
-The goal of this repository is related but different to the goal set by the original Kaggle Competition. This involved heavy use of lidar data in conjuction with imagery data. This project, instead, soley focuses on using the image data for imagery based work.
+The goal of this repository is related but different to the goal set by the original Kaggle Competition. The competition involved heavy use of lidar data in conjuction with imagery data. This project, instead, soley focuses on using the image data for imagery based work.
 
 In particular, the goal of this repository is to take the few hundred thousand images provided by Lyft and use them as an introductory to applications of CNN models for Image Classification and Object Detection. I thought it would be interesting and realistic to use the image data from Lyft as it was collected in a real world scenario which means it comes with the nuances and challenges that a Data Scientist would face in real world applications. Specifically, I decided that I would take the initial approach of binary classification to make the project scope more manageable, and this resulted in a focus on identifying the Pedestrian category/class. 
 
 While this goes beyond some of the most basic Image Classification exercises one might find with common datasets like MNIST or CIFAR, it is still designed as an entry point to using CNNs on image data as well as common image preprocessing techniques. In it's initial phase (Dec 2023), the project will focus more on the application, data manipulation and model inference results rather than focusing on theory or experimenting with and across CNN architectures.
 
-#### The initial phase yielded many interesting patterns and required domain specific knowledge in order to transform the raw dataset into something meaningful. A few of these were captured in visualizations below:
-- The pie shows one of the top performing Resnet50 model's most common error based on object category
+#### The initial phase yielded many interesting patterns and required domain specific knowledge in order to transform the raw dataset into something meaningful. A few of these elements were captured in visualizations below:
+- The pie chart shows one of the top performing Resnet50 model's most common false positive errors based on object category
 - The coordinate transformation diagram (credit to University College London https://github.com/UCL/MPHY0026/blob/master/doc/calibration/camera_calibration.rst) depicts some of the complex matrix transformations that are required to translate between World Space (default) and Image Space
 - The heatmap shows the full image space of a given image in our dataset denoted by the x and y axis. The red shading indicates the frequency of occurences of our positive category (Pedestrian) in that location of the image. Almost all occur across the x axis but in a narrow region of the y axis.
 
@@ -68,17 +68,16 @@ For our purposes, we can ignore the lidar directories as well as sample_submissi
 
 
 # 2. Getting Started with the Project
-## 2a. Clone the Repository to your local or hosted machine
+## 2a. Clone the Repository to your machine
 ```
 git clone https://github.com/Stern04/MADS_Capstone.git
 ```
-## 2b. Create virtual environment
-```
-git clone https://github.com/Stern04/MADS_Capstone.git
-```
-## 2c. Getting set up
+
+## 2b. Getting set up
 Once you have the repository cloned, you will need to create a virtual environment and install the required libraries. Of all the libraries installed, the most notable are `torchvision==0.17.0.dev20231018+cu118` and `lyft-dataset-sdk @ git+https://github.com/lyft/nuscenes-devkit@49c36da0a85da6bc9e8f2a39d5d967311cd75069`
 ```
+conda create -n myenv
+
 pip install -r requirements.txt
 ```
 Then, you need to run the create_dir_tree.py script. This will mimic the directory structure that the Notebooks expect. The user can alter this, but it makes the Notebooks easier to use out of the box.
@@ -92,8 +91,13 @@ Lastly, since we don't yet have a pipeline to transfer the data from the Lyft da
 - Since we don't use the Lidar or Maps directory, you also do not need to copy all of the lidar data from the download directory into the repository. This won't hurt anything, but the repository does not make use of it currently.
 - Don't forget at the beginning of both Notebooks that you must set the `user_path_prefix` variable so the code in the Notebooks can find your starting data and know where to store the processed data and models along the way.
 
-## 2d. Getting Comfortable
+## 2c. Getting Comfortable
 The first step that I recommend once you have gotten things in place is to actually visit this Notebook by Kaggle User SHREE911 https://www.kaggle.com/code/shree911/lidar-object-det-lyft. This will act as your tutorial into the Lyft SDK that is installed via `requirements.txt` and is how I started my initial exploration. While it talks a lot about the lidar which we do not use, it is a well thought and intuitive guide to get you familiar with Lyft's dataset. I hope that the working Notebooks are easy enough to follow on their own, but SHREE911's Notebook is my first recommendation for any supplemental understanding.
+
+Additionally, I highly recommend reading through the Torch_Traffic_Blog_Post.pdf. I included it in the repository because I think it does the best and most detailed job of describing the purpose of this project and why it has value. Both of the working Notebooks are fairly dense, and as such, I wanted to have somewhere where I could write more about what I did and why. It is a quick read and there is minimal math.
+
+## 3 Conclusion of Torch Traffic version 0.0.1
+As the title suggests, as of Dec 2023, this project is in its infancy. What is exciting is that promising results were achieved for Image Classification 
 
 
 
