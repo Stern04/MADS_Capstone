@@ -12,9 +12,9 @@ In particular, the goal of this repository is to take the few hundred thousand i
 While this goes beyond some of the most basic Image Classification exercises one might find with common datasets like MNIST or CIFAR, it is still designed as an entry point to using CNNs on image data as well as common image preprocessing techniques. In it's initial phase (Dec 2023), the project will focus more on the application, data manipulation and model inference results rather than focusing on theory or experimenting with and across CNN architectures.
 
 #### The initial phase yielded many interesting patterns and required domain specific knowledge in order to transform the raw dataset into something meaningful. A few of these were captured in visualizations below:
-- The pie chart on the left shows one of the top performing Resnet50 model's most common error based on object category
-- The upper right image (credit to University College London https://github.com/UCL/MPHY0026/blob/master/doc/calibration/camera_calibration.rst) depicts some of the complex matrix transformations that are required to translate between World Space (default) and Image Space
-- The lower right image shows the full image space of a given image in our dataset denoted by the x and y axis. The red shading in the middle is a heatmap of occurences of our positive category (Pedestrian) which highlights the most common locations in the imagery that this category occurs.
+- The pie shows one of the top performing Resnet50 model's most common error based on object category
+- The coordinate transformation diagram (credit to University College London https://github.com/UCL/MPHY0026/blob/master/doc/calibration/camera_calibration.rst) depicts some of the complex matrix transformations that are required to translate between World Space (default) and Image Space
+- The heatmap shows the full image space of a given image in our dataset denoted by the x and y axis. The red shading indicates the frequency of occurences of our positive category (Pedestrian) in that location of the image. Almost all occur across the x axis but in a narrow region of the y axis.
 
 ![Alt text](blog_images/pie_false_positives_torch.PNG)
 ![Alt text](blog_images/camera_intrinsic.jpeg)
@@ -25,10 +25,13 @@ While this goes beyond some of the most basic Image Classification exercises one
 ### lyft_preprocessing.ipynb
 ### lyft_training_inference.ipynb
 ### create_dir_tree.py
+### Torch_Traffic_Blog_Post.pdf
 
 The project is currently centered around two Jupyter Notebooks: lyft_preprocessing and lyft_training_inference. As their name suggests, the former is devoted to the many, tedious image preprocessing steps required to get images ready for model ingestion. The latter walks the user through using a plug and play Pytorch CNN model to perform Image Classification and Object Detection.
 
 Each Notebook has many, detailed markdown cells within it that will help guide the user through the process. Additionally, each custom function has been well documented. I chose to leave all function definitions defined within the Notebook. In future phases, I will pull these out into utils.py files to clear Notebook clutter.
+
+Torch_Traffic_Blog_Post.pdf is a copy of a written report that outlines the whole project. It has the most detailed explanations of the data and processes that each Notebook works through. I recommend reading it before interacting with the Notebooks, although its not necessary.
 
 NOTE: The data itself does not come with the repository. The full dataset (both images and lidar) is very large. I have left more details about data access in the Data section.
 
@@ -84,9 +87,13 @@ Ensure that you are in the main directory.
 cd S:\MADS\Capstone\3d-object-detection-for-autonomous-vehicles>
 python3 create_dir_tree.py
 ```
-Lastly, since we don't yet have a pipeline to transfer the data from the Lyft data download, the user will have to copy paste 
+Lastly, since we don't yet have a pipeline to transfer the data from the Lyft data download, the user will have to copy paste the images from the downloaded data into the corresponding images directory in the repository folder. There are two very important points to remember here:
+- Since we don't actually use the images in Lyft's Test directory and only use the images in the Train directory (split into Train and Validation), you don't need to copy paste the Test images unless you want to. 
+- Since we don't use the Lidar or Maps directory, you also do not need to copy all of the lidar data from the download directory into the repository. This won't hurt anything, but the repository does not make use of it currently.
+- Don't forget at the beginning of both Notebooks that you must set the `user_path_prefix` variable so the code in the Notebooks can find your starting data and know where to store the processed data and models along the way.
 
-
+## 2d. Getting Comfortable
+The first step that I recommend once you have gotten things in place is to actually visit this Notebook by Kaggle User SHREE911 https://www.kaggle.com/code/shree911/lidar-object-det-lyft. This will act as your tutorial into the Lyft SDK that is installed via `requirements.txt` and is how I started my initial exploration. While it talks a lot about the lidar which we do not use, it is a well thought and intuitive guide to get you familiar with Lyft's dataset. I hope that the working Notebooks are easy enough to follow on their own, but SHREE911's Notebook is my first recommendation for any supplemental understanding.
 
 
 
